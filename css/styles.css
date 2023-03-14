@@ -1,0 +1,197 @@
+:root {
+  --color-iris: #4d5ae5;
+  --color-ocean: #404bbf;
+  --color-navy-blue: #2e2f42;
+  --color-green: #31d0aa;
+  --color-slate: #434455;
+  --color-light-slate: #8e8f99;
+  --color-cornflower: #e7e9fc;
+  --color-cloud: #f4f4fd;
+
+  --primary-font-family: 'Roboto', sans-serif; /**/
+  --secondary-font-family: 'Raleway', sans-serif; /**/
+
+  --primary-text-color: var(--color-slate);
+  --secondary-text-color: var(--color-navy-blue);
+  --primary-text-color-dark: var(--color-cornflower);
+  --secondary-text-color-dark: white;
+  --primary-background-color: white;
+  --secondary-background-color-light: var(--color-cloud);
+  --secondary-background-color-dark: var(--color-navy-blue);
+
+  --logo-primary-color: var(--color-iris);
+  --logo-secondary-color-dark: var(--color-navy-blue);
+  --logo-secondary-color-light: var(--color-cloud);
+  --accent-link-color: var(--color-ocean);
+  --button-face-color: var(--color-iris);
+  --button-accent-face-color: var(--color-ocean);
+  --button-text-color: white;
+  --button-filter-face-color: var(--color-cloud);
+  --button-filter-text-color: var(--color-iris);
+}
+body {
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: 500;
+  color: var(--primary-text-color);
+  font-size: 16px;
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-link-color);
+}
+.list {
+  list-style: none;
+}
+
+.hidden-element {
+  display: none;
+}
+/* ================COMPONENT========== */
+.logo {
+  font-family: var(--secondary-font-family);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-primary-color);
+}
+
+.logo-studio-part {
+  color: var(--logo-secondary-color-dark);
+}
+
+.button-order {
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-size: inherit;
+  color: var(--button-text-color);
+  background-color: var(--button-face-color);
+}
+
+.button-order:hover,
+.button-order:focus {
+  background-color: var(--button-accent-face-color);
+  cursor: pointer;
+}
+
+.portfolio-filters-button {
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--button-filter-text-color);
+  background-color: var(--button-filter-face-color);
+}
+
+.portfolio-filters-button:hover,
+.portfolio-filters-button:focus,
+.portfolio-filters-button:active {
+  color: var(--button-text-color);
+  background-color: var(--accent-link-color);
+  cursor: pointer;
+}
+.second-level-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--secondary-text-color);
+}
+
+.third-level-header {
+  font-weight: inherit;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.text {
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+/* ===============/COMPONENT========== */
+/* =============== HEADER============= */
+
+.header-menu-item {
+  font-family: var(--primary-font-family);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.header-menu-item-link {
+  color: var(--secondary-text-color);
+}
+.header-contact {
+  font-style: normal;
+}
+
+.header-contact-item-link {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+/* ==============/HEADER============= */
+/* =================HERO================== */
+.hero {
+  background-color: var(--secondary-background-color-dark);
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color-dark);
+}
+
+/* =================/HERO================== */
+/* ======================ADVENCES=============== */
+
+/* ======================ADVENCES=============== */
+/* ========================WEDOING================== */
+.wedoing-header {
+  text-align: center;
+}
+/* ========================WEDOING================== */
+
+/* ===================/OURTEAM========================== */
+.ourteam-header {
+  text-align: center;
+}
+.ourteam-list-item {
+  text-align: center;
+  background-color: var(--primary-background-color);
+}
+
+.ourteam {
+  background-color: var(--secondary-background-color-light);
+}
+/* ===================OURTEAM========================== */
+/* =====================PORTFOLIO==================== */
+.portfolio-list-item-type {
+  color: var(--primary-text-color);
+}
+/* =====================/PORTFOLIO==================== */
+/* ===================FOOTER==================== */
+.footer {
+  background-color: var(--secondary-background-color-dark);
+  color: var(--primary-text-color-dark);
+}
+.footer .logo-studio-part {
+  color: var(--logo-secondary-color-light);
+}
