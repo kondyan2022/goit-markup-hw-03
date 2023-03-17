@@ -28,6 +28,28 @@
   --button-text-color: white;
   --button-filter-face-color: var(--color-cloud);
   --button-filter-text-color: var(--color-iris);
+  --button-filter-border-color: var(--color-cornflower);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
 }
 body {
   font-family: var(--primary-font-family);
@@ -53,7 +75,17 @@ body {
 .hidden-element {
   display: none;
 }
+
+.container {
+  display: block;
+  max-width: 1158px;
+  padding: 0px 15px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 2px dashed tomato;
+}
 /* ================COMPONENT========== */
+
 .logo {
   font-family: var(--secondary-font-family);
   font-weight: 800;
@@ -124,25 +156,62 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
 /* ===============/COMPONENT========== */
 /* =============== HEADER============= */
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
 
+.header-navigation {
+  display: flex;
+  outline: 2px dashed tomato;
+}
+
+.header .logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  outline: 2px dashed tomato;
+  margin-right: 76px;
+}
+
+.header-menu {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  outline: 2px dashed tomato;
+}
 .header-menu-item {
   font-family: var(--primary-font-family);
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
+.header-menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .header-menu-item-link {
   color: var(--secondary-text-color);
 }
 .header-contact {
   font-style: normal;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
-
+.header-contact-list {
+  display: flex;
+  outline: 2px dashed tomato;
+}
+.header-contact-item:not(:last-child) {
+  margin-right: 40px;
+}
 .header-contact-item-link {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  outline: 2px dashed tomato;
 }
 
 /* ==============/HEADER============= */
@@ -150,7 +219,18 @@ body {
 .hero {
   background-color: var(--secondary-background-color-dark);
 }
+
+.hero .container {
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
 .hero-title {
+  display: block;
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -159,30 +239,112 @@ body {
   color: var(--secondary-text-color-dark);
 }
 
+.hero .button-order {
+  display: block;
+  width: 169px;
+  height: 56px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* =================/HERO================== */
 /* ======================ADVENCES=============== */
+.advences .container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.advences-list {
+  display: flex;
+}
 
+.advences-list-item:not(:last-child) {
+  margin-right: 40px;
+}
 /* ======================ADVENCES=============== */
 /* ========================WEDOING================== */
+.wedoing .container {
+  /* padding-top: 120px; */
+  padding-bottom: 120px;
+}
 .wedoing-header {
   text-align: center;
+  margin-bottom: 70px;
+}
+.wedoing-list {
+  display: flex;
+  outline: 2px dashed tomato;
+}
+.wedoing-list-item:not(:last-child) {
+  margin-right: 24px;
+}
+.wedoing-list-item-foto {
+  display: block;
 }
 /* ========================WEDOING================== */
 
 /* ===================/OURTEAM========================== */
+.ourteam .container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  /* background-color: var(--secondary-background-color-light); */
+}
 .ourteam-header {
   text-align: center;
+  margin-bottom: 72px;
+}
+.ourteam-list {
+  display: flex;
+}
+.ourteam-person-foto {
+  display: block;
 }
 .ourteam-list-item {
   text-align: center;
   background-color: var(--primary-background-color);
 }
-
+.ourteam-list-item:not(:last-child) {
+  padding-right: 24px;
+}
 .ourteam {
   background-color: var(--secondary-background-color-light);
 }
 /* ===================OURTEAM========================== */
 /* =====================PORTFOLIO==================== */
+.portfolio .container {
+  padding-top: 96px;
+  padding-bottom: 120px;
+  /* text-align: center; */
+}
+
+.portfolio-filters-button-list {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
+  justify-content: center;
+}
+.portfolio-filters-button-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.portfolio-filters-button {
+  border: 1px solid var(--button-filter-border-color);
+  border-radius: 4px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -12px;
+  outline: 2px dashed lawngreen;
+}
+.portfolio-list-item {
+  margin: 12px;
+  padding-bottom: 32px;
+}
+.portfolio-list-item-header {
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
 .portfolio-list-item-type {
   color: var(--primary-text-color);
 }
@@ -194,4 +356,18 @@ body {
 }
 .footer .logo-studio-part {
   color: var(--logo-secondary-color-light);
+}
+/* =======================FOOTER=============== */
+.footer .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer .logo {
+  outline: 2px dashed tomato;
+}
+
+.footer-text {
+  width: 264px;
+  margin-top: 16px;
+  outline: 2px dashed tomato;
 }
