@@ -167,13 +167,14 @@ body {
 
 /* ===============/COMPONENT========== */
 /* =============== HEADER============= */
+.header {
+  border-bottom: 1px solid var(--button-filter-border-color);
+}
+
 .header .container {
   display: flex;
   justify-content: space-between;
   background: var(--primary-background-color);
-  /* CORNFLOWER */
-
-  border-bottom: 1px solid var(--button-filter-border-color);
 }
 
 .header-navigation {
